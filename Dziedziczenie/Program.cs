@@ -1,6 +1,9 @@
 ﻿using Dziedziczenie.Figury;
+using Dziedziczenie.KlasaAbstrakcyjna;
 using Dziedziczenie.KlasaStatyczna;
+using Dziedziczenie.MetodyWirtualne;
 using Dziedziczenie.Pojazdy;
+using Dziedziczenie.Przeciazanie;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +38,22 @@ namespace Dziedziczenie
 
             Console.WriteLine("Nazwa hosta: {0}",Utils.hostname);
             Console.WriteLine("Nazwa hosta: {0}", Utils.GetMaxValue(-10,10,20,30,3,-4));
+
+            Product ap = new Product("Mleko", 2.99);
+            ap.ShowPrice();
+
+            Wektor wektor1 = new Wektor(2, -4);
+            Wektor wektor2 = new Wektor(-2,3);
+            //Wektor wektor = wektor1.Add(wektor2);
+            //Wektor wektor = wektor1 + wektor2;
+            Wektor wektor = wektor1 + 2;
+
+
+            wektor.Print();
+
+            Kot kot = new Kot();
+            Console.WriteLine(kot);
+
 
             Console.ReadKey();
         }
