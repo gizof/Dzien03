@@ -10,9 +10,11 @@ namespace Dziedziczenie.Pojazdy
 
     {
         private double pojemnoscBaterii;
+        private int zywotnoscBaterii;
+
         public void Zatankuj()
         {
-            Console.WriteLine("Podłącz do prądu");
+            
         }
     }
 }

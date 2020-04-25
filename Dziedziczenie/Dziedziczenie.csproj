@@ -47,6 +47,7 @@
     <Compile Include="Figury\Ifigura.cs" />
     <Compile Include="Figury\IfiguraStat.cs" />
     <Compile Include="Figury\Kwadrat.cs" />
+    <Compile Include="Figury\okrag.cs" />
     <Compile Include="Figury\Prostokat.cs" />
     <Compile Include="Figury\Trojkat.cs" />
     <Compile Include="KlasaStatyczna\Utils.cs" />
