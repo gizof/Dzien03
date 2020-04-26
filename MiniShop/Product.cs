@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Authentication.ExtendedProtection.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,9 +19,12 @@ namespace MiniShop
 
         public double Price { get { return price; } }
         //ustawianie parametrow
-        public void SetParam(int id, string name, double price, string descr="")
+        public Product (int id, string name, double price, string descr="")
         {
-            //
+            this.id = id;
+            this.name = name;
+            this.price = price;
+            this.descr = descr;
         }
 
         public void ChangePrice(double newPrice)//podlaczona kolekcja wartosci. mechanizm logowania starych cen. podbijana jest wersja
@@ -37,7 +41,10 @@ namespace MiniShop
             this.active = isActive; //ustawia czy produkt jest dostepny czy nie
         }
 
-
+        public override string ToString()
+        {
+            return name;
+        }
 
     }
 }
